@@ -2,6 +2,14 @@
 API com django
 
 _______________________________________
+#BAIXE AS DEPEDENCIAS:
+pip install django 
+
+pip install djangorestframework
+
+pip install django-cors-headers
+_______________________________________
+
 #COMANDOS DJANGO#
 
 #Criar Projeto
@@ -53,3 +61,26 @@ Caso você possua um banco de dados já existente e queira mapeá-lo para seu pr
 
 python manage.py inspectdb > nome_da_app.models.py
 
+___________________________________________________________________________________________________________________________________________________________________________________________________
+
+##django + postgresql##
+
+#baixe as depedencias:
+
+pip install psycopg2
+
+pip install psycopg2-binary
+
+#edite o database no settings.py
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': '<db name>',
+        'USER':'<user>',
+        'PASSWORD':'<password>',
+        'HOST':'<server>',
+        'PORT':'5432'
+    }
+}
