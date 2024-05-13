@@ -74,13 +74,13 @@ pip install psycopg2-binary
 #edite o database no settings.py
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '<db name>',
-        'USER':'<user>',
-        'PASSWORD':'<password>',
-        'HOST':'<server>',
-        'PORT':'5432'
-    }
-}
+DATABASES = { 
+    'default': { 
+        'ENGINE': 'django.db.backends.postgresql', 
+        'NAME': '<db name>', 
+        'USER':'<user>', 
+        'PASSWORD':'<password>', 
+        'HOST':'<server>', 
+        'PORT':'5432' 
+    } 
+} 
